@@ -1,7 +1,7 @@
 import React from 'react';
 import { LockscreenConfig } from '../types/lockscreen';
 import { calculateTimeRemaining, formatFriendlyDate } from '../lib/countdown';
-import { CheckCircle2, Circle, Clock, Sparkles } from 'lucide-react';
+import { CheckCircle2, Circle, Clock } from 'lucide-react';
 
 interface WallpaperCanvasProps {
   config: LockscreenConfig;
@@ -107,7 +107,6 @@ export const WallpaperCanvas: React.FC<WallpaperCanvasProps> = ({ config, canvas
         <div className="flex items-center justify-between">
           <span className={theme.badge}>{config.category.toUpperCase()} // HORIZON</span>
           <div className="flex items-center gap-1.5 text-[11px] font-mono opacity-60">
-            <Sparkles className="w-3.5 h-3.5 text-amber-400" />
             <span>AI Skills Studio</span>
           </div>
         </div>

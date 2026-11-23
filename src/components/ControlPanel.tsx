@@ -10,7 +10,6 @@ import {
   Trash2,
   Eye,
   EyeOff,
-  Sparkles,
 } from 'lucide-react';
 
 interface ControlPanelProps {
@@ -105,9 +104,8 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
 
       {/* Preset Selector */}
       <div className="flex flex-col gap-2">
-        <label className="text-xs font-semibold text-zinc-300 uppercase tracking-wider flex items-center gap-1.5">
-          <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-          <span>Select Challenge Preset</span>
+        <label className="text-xs font-semibold text-zinc-300 uppercase tracking-wider">
+          Select Challenge Preset
         </label>
         <div className="grid grid-cols-2 gap-2">
           {PRESETS.map((preset) => (
